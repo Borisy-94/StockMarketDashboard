@@ -37,3 +37,55 @@ Yahoo Finance API – automatisch stündlich aktualisiert.
 | ADBE | 🎨 Adobe |
 
 ## 🔄 Wie es funktioniert
+
+Yahoo Finance API
+↓
+fetch_stocks.py (Daten holen)
+↓
+clean_stocks.py (Daten bereinigen)
+↓
+stocks_sauber.csv (für Power BI)
+↓
+Power BI Dashboard (Live!)
+
+## 🚀 Installation
+
+### 1. Repository klonen
+```bash
+git clone https://github.com/Borisy-94/StockMarketDashboard
+```
+
+### 2. Libraries installieren
+```bash
+pip install yfinance pandas
+```
+
+### 3. Daten abrufen
+```bash
+python scripts/fetch_stocks.py
+python scripts/clean_stocks.py
+```
+
+### 4. Power BI öffnen
+
+data/Stock Market Live Dashboard.pbix
+
+## 📁 Projektstruktur
+
+StockMarketDashboard/
+├── 📁 scripts/
+│   ├── fetch_stocks.py      ← API Abruf
+│   ├── clean_stocks.py      ← Bereinigung
+│   └── update_stocks.py     ← Automatisierung
+├── 📁 data/
+│   ├── stocks_sauber.csv
+│   └── stocks_verlauf_sauber.csv
+├── 📁 screenshots/
+│   └── dashboard_final.png
+└── README.md
+
+## 👨‍💻 Autor
+**Boris Petamba**
+- LinkedIn: linkedin.com/in/borispetamba
+- GitHub: github.com/Borisy-94
+- Email: borispetamba@gmail.com
